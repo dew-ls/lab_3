@@ -1,0 +1,5 @@
+add_executable(hello_world hello_world.cpp)
+find_library(FORMATTER_EX_LIB NAMES formatter_ex PATHS ../build_formatter_ex)
+find_library(FORMATTER_LIB NAMES formatter PATHS ../build_formatter)
+target_include_directories(hello_world PRIVATE ../formatter_ex_lib)
+target_link_libraries(hello_world PRIVATE ${FORMATTER_EX_LIB} ${FORMATTER_LIB})
