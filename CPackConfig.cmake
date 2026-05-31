@@ -1,6 +1,0 @@
-set(CPACK_PACKAGE_NAME "solver")
-set(CPACK_PACKAGE_VERSION ${SOLVER_VERSION})
-set(CPACK_DESCRIPTION_SUMMARY "This is solver pack.")
-set(CPACK_PACKAGE_VENDOR "dew-ls")
-set(CPACK_PACKAGE_CONTACT "artemsuprankov6388@gmail.com")
-include(CPack)
